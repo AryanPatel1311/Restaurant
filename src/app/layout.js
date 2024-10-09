@@ -24,7 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Box sx={{ padding: "10px 50px" }}>
+        <Box
+          sx={{
+            padding: { md: "10px 50px", xl: "10px 150px" },
+            backgroundColor:
+              "linear-gradient(180deg, #FAFAFA 0%, #FCFCFC 100%)",
+          }}
+        >
           <Header />
           {children}
           <Footer />
