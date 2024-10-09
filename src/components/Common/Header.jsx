@@ -2,7 +2,7 @@ import { Badge, Box, Button, Typography } from "@mui/material";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
-import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+
 const Header = () => {
   return (
     <Box

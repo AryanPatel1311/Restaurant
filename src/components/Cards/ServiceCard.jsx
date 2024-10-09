@@ -13,7 +13,7 @@ const ServiceCard = ({ img, title, description }) => {
         borderRadius: "30px",
         padding: "20px 40px",
         gap: 1.5,
-        flexGrow: 1, // Allow the card to grow and fill the space
+        flexGrow: 1,
       }}
     >
       <Box component={"img"} src={img} sx={{ width: "32px", height: "32px" }} />

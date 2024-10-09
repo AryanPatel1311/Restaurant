@@ -6,15 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick/lib/slider";
 import MenuCard from "../Cards/MenuCard";
 
-// Import icons
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const MenuSection = () => {
-  const sliderRef = useRef(null); // Create a ref for the slider
+  const sliderRef = useRef(null);
 
   var settings = {
-    dots: false, // Disable dots
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -60,14 +59,14 @@ const MenuSection = () => {
             onClick={() => sliderRef.current.slickPrev()}
             aria-label="Previous"
             sx={{
-              backgroundColor: "#EFEFEF", // Button background
-              borderRadius: "50%", // Make it circular
-              padding: "10px", // Padding around the icon
-              border: "1px solid #ccc", // Button border
-              color: "#4CAF50", // Default icon color
+              backgroundColor: "#EFEFEF",
+              borderRadius: "50%",
+              padding: "10px",
+              border: "1px solid #ccc",
+              color: "#4CAF50",
               "&:hover": {
-                backgroundColor: "#39DB4A", // Hover background color
-                color: "white", // Change icon color on hover
+                backgroundColor: "#39DB4A",
+                color: "white",
               },
             }}
           >
@@ -77,14 +76,14 @@ const MenuSection = () => {
             onClick={() => sliderRef.current.slickNext()}
             aria-label="Next"
             sx={{
-              backgroundColor: "#EFEFEF", // Button background
-              borderRadius: "50%", // Make it circular
-              padding: "10px", // Padding around the icon
-              border: "1px solid #ccc", // Button border
-              color: "#4CAF50", // Default icon color
+              backgroundColor: "#EFEFEF",
+              borderRadius: "50%",
+              padding: "10px",
+              border: "1px solid #ccc",
+              color: "#4CAF50",
               "&:hover": {
-                backgroundColor: "#39DB4A", // Hover background color
-                color: "white", // Change icon color on hover
+                backgroundColor: "#39DB4A",
+                color: "white",
               },
             }}
           >

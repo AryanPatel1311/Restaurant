@@ -240,12 +240,12 @@ const Footer = () => {
               ":hover": {
                 backgroundColor: "#39DB4A",
                 "& svg": {
-                  color: "#ffffff", // Change icon color to white on hover
+                  color: "#ffffff",
                 },
               },
             }}
           >
-            <FacebookIcon sx={{ color: "#39DB4A" }} /> {/* Default color */}
+            <FacebookIcon sx={{ color: "#39DB4A" }} />
           </Box>
           <Box
             sx={{
@@ -259,12 +259,12 @@ const Footer = () => {
               ":hover": {
                 backgroundColor: "#39DB4A",
                 "& svg": {
-                  color: "#ffffff", // Change icon color to white on hover
+                  color: "#ffffff",
                 },
               },
             }}
           >
-            <InstagramIcon sx={{ color: "#39DB4A" }} /> {/* Default color */}
+            <InstagramIcon sx={{ color: "#39DB4A" }} />
           </Box>
           <Box
             sx={{
@@ -278,12 +278,12 @@ const Footer = () => {
               ":hover": {
                 backgroundColor: "#39DB4A",
                 "& svg": {
-                  color: "#ffffff", // Change icon color to white on hover
+                  color: "#ffffff",
                 },
               },
             }}
           >
-            <TwitterIcon sx={{ color: "#39DB4A" }} /> {/* Default color */}
+            <TwitterIcon sx={{ color: "#39DB4A" }} />
           </Box>
           <Box
             sx={{
@@ -297,12 +297,12 @@ const Footer = () => {
               ":hover": {
                 backgroundColor: "#39DB4A",
                 "& svg": {
-                  color: "#ffffff", // Change icon color to white on hover
+                  color: "#ffffff",
                 },
               },
             }}
           >
-            <YouTubeIcon sx={{ color: "#39DB4A" }} /> {/* Default color */}
+            <YouTubeIcon sx={{ color: "#39DB4A" }} />
           </Box>
         </Box>
         <Typography
