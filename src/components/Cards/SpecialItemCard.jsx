@@ -10,15 +10,19 @@ const SpecialItemCard = ({ img, title, value }) => {
         gap: 2,
         backgroundColor: "#FFFFFF",
         boxShadow: "0px 10px 20px 0px #00000024",
-        padding: "15px",
+        padding: { md: "15px", xs: "10px" },
         borderRadius: "25px",
-        minWidth: "17vw",
+        minWidth: { md: "17vw", xs: "10vw" },
       }}
     >
       <Box
         component={"img"}
         src={img}
-        sx={{ width: "90px", height: "90px", objectFit: "contain" }}
+        sx={{
+          width: { md: "90px", xs: "50px" },
+          height: { md: "90px", xs: "50px" },
+          objectFit: "contain",
+        }}
       />
       <Box
         sx={{

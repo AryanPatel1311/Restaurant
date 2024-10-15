@@ -23,10 +23,9 @@ const MenuCard = ({ img }) => {
         padding: "20px 24px",
         borderRadius: "40px",
         position: "relative",
-
         minWidth: "320px",
         whiteSpace: "normal",
-        mx: { xs: 2, xl: 4, lg: 2, md: 3.5, sm: 3.5 },
+        mx: { xl: 4, lg: 2, md: 3.5 },
       }}
     >
       <Box
@@ -53,9 +52,9 @@ const MenuCard = ({ img }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          cursor: "pointer", // Add a pointer cursor to indicate clickability
+          cursor: "pointer",
         }}
-        onClick={handleFavoriteClick} // Add click handler
+        onClick={handleFavoriteClick}
       >
         {isFavorite ? (
           <FavoriteIcon sx={{ alignSelf: "center", color: "#ffffff" }} />

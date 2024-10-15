@@ -10,7 +10,10 @@ const ServicesSection = () => {
         alignItems: "flex-start",
         width: "100%",
         justifyContent: "space-between",
-        py: "75px",
+        py: { md: "75px", xs: "40px" },
+        px: 4,
+        flexDirection: { md: "row", xs: "column" },
+        gap: 4,
       }}
     >
       <Box
@@ -18,27 +21,27 @@ const ServicesSection = () => {
           display: "flex",
           flexDirection: "column",
           gap: 3,
-          alignItems: "flex-start",
+          alignItems: { md: "flex-start", xs: "center" },
           width: { md: "44vw", xl: "40vw" },
         }}
       >
         <Typography
-          align="left"
           sx={{
             color: "#FF6868",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: 700,
             letterSpacing: 2.5,
             textTransform: "uppercase",
+            textAlign: { md: "left", xs: "center" },
           }}
         >
           Our Story & Services
         </Typography>
         <Typography
-          align="left"
           sx={{
             color: "#000000",
-            fontSize: "50px",
+            fontSize: { md: "50px", xs: "25px" },
+            textAlign: { md: "left", xs: "center" },
             fontWeight: 800,
           }}
         >
@@ -47,7 +50,8 @@ const ServicesSection = () => {
         <Typography
           sx={{
             color: "#555555",
-            fontSize: "24px",
+            textAlign: { md: "left", xs: "center" },
+            fontSize: { md: "24px", xs: "18px" },
             fontWeight: 500,
           }}
         >

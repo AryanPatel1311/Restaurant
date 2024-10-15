@@ -16,10 +16,11 @@ const Footer = () => {
         mt: "75px",
         mb: "20px",
         width: "100%",
+        px: 2,
       }}
     >
-      <Grid container width={"100%"} whiteSpace={"wrap"}>
-        <Grid item xs={12} md={3}>
+      <Grid container width={"100%"} spacing={3}>
+        <Grid item xs={6} md={3}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }}>
               <Box
@@ -44,20 +45,25 @@ const Footer = () => {
             </Box>
             <Typography
               sx={{
-                fontSize: "20px",
+                fontSize: { md: "20px", xs: "16px" },
                 fontWeight: 500,
                 color: "#555555",
-                width: { md: "15vw", xl: "14vw" },
+                width: { md: "15vw", xl: "14vw", xs: "100%" },
+                textAlign: "left",
               }}
             >
               Savor the artistry where every dish is a culinary masterpiece
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <Typography
-              sx={{ color: "#000000", fontSize: "22px", fontWeight: 600 }}
+              sx={{
+                color: "#000000",
+                fontSize: { md: "22px", xs: "18px" },
+                fontWeight: 600,
+              }}
             >
               Useful links
             </Typography>
@@ -72,7 +78,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -82,7 +88,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -92,7 +98,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -102,7 +108,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -112,10 +118,14 @@ const Footer = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <Typography
-              sx={{ color: "#000000", fontSize: "22px", fontWeight: 600 }}
+              sx={{
+                color: "#000000",
+                fontSize: { md: "22px", xs: "18px" },
+                fontWeight: 600,
+              }}
             >
               Main Menu
             </Typography>
@@ -130,7 +140,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -140,7 +150,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -150,7 +160,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -160,7 +170,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -170,10 +180,14 @@ const Footer = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <Typography
-              sx={{ color: "#000000", fontSize: "22px", fontWeight: 600 }}
+              sx={{
+                color: "#000000",
+                fontSize: { md: "22px", xs: "18px" },
+                fontWeight: 600,
+              }}
             >
               Contact Us
             </Typography>
@@ -188,7 +202,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -198,7 +212,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -208,7 +222,7 @@ const Footer = () => {
               <Button
                 sx={{
                   textTransform: "none",
-                  fontSize: "18px",
+                  fontSize: { md: "18px", xs: "16px" },
                   fontWeight: "500",
                   color: "#555555",
                 }}
@@ -222,9 +236,10 @@ const Footer = () => {
       <Box
         sx={{
           display: "flex",
-          gap: 20,
+          gap: { md: 20, xs: 2 },
           alignItems: "center",
           width: "100%",
+          flexDirection: { md: "row", xs: "column" },
         }}
       >
         <Box sx={{ display: "flex", alignItems: "flex-start", gap: "5px" }}>
@@ -309,9 +324,9 @@ const Footer = () => {
           align="center"
           sx={{
             color: "#555555",
-            fontSize: "20px",
+            fontSize: { md: "20px", xs: "16px" },
             fontWeight: "500",
-            width: "60%",
+            width: { md: "60%", xs: "100%" },
           }}
         >
           Copyright 2023 Dscode | All rights reserved

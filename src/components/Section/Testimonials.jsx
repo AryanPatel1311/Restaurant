@@ -7,10 +7,12 @@ const Testimonials = () => {
     <Box
       sx={{
         display: "flex",
-        alignItems: "flex-start",
+        alignItems: { md: "flex-start", xs: "center" },
         width: "100%",
         justifyContent: "space-between",
-        py: "75px",
+        py: { md: "75px", xs: "40px" },
+        px: 4,
+        flexDirection: { md: "row", xs: "column" },
       }}
     >
       <Box
@@ -25,8 +27,8 @@ const Testimonials = () => {
           component={"img"}
           src="/Mask group.png"
           sx={{
-            width: "456px",
-            height: "744px",
+            width: { md: "456px", xs: "228px" },
+            height: { md: "744px", xs: "372px" },
             zIndex: 1,
             objectFit: "cover",
           }}
@@ -39,11 +41,11 @@ const Testimonials = () => {
             borderTopRightRadius: "140px",
             borderBottomLeftRadius: "41px",
             borderBottomRightRadius: "41px",
-            width: "500px",
-            height: "362px",
+            width: { md: "500px", xs: "250px" },
+            height: { md: "362px", xs: "220px" },
             zIndex: -1,
             bottom: 0,
-            left: 4,
+            left: { md: 4, xs: -5 },
           }}
         >
           <Typography
@@ -53,6 +55,7 @@ const Testimonials = () => {
               left: -25,
               fontSize: "40px",
               transform: "rotate(20deg)",
+              display: { md: "block", xs: "none" },
             }}
           >
             😋
@@ -64,6 +67,7 @@ const Testimonials = () => {
               right: -25,
               fontSize: "40px",
               transform: "rotate(-80deg)",
+              display: { md: "block", xs: "none" },
             }}
           >
             🍕
@@ -75,19 +79,19 @@ const Testimonials = () => {
           display: "flex",
           flexDirection: "column",
           gap: 3,
-          alignItems: "flex-start",
-          mt: 15,
+          alignItems: { md: "flex-start", xs: "center" },
+          mt: { md: 15, xs: 4 },
           width: { md: "44vw", xl: "40vw" },
         }}
       >
         <Typography
-          align="left"
           sx={{
             color: "#FF6868",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: 700,
             letterSpacing: 2.5,
             textTransform: "uppercase",
+            textAlign: { md: "left", xs: "center" },
           }}
         >
           Testimonials
@@ -96,8 +100,9 @@ const Testimonials = () => {
           align="left"
           sx={{
             color: "#000000",
-            fontSize: "50px",
+            fontSize: { md: "50px", xs: "25px" },
             fontWeight: 800,
+            textAlign: { md: "left", xs: "center" },
           }}
         >
           What Our Customers Say About Us
@@ -105,8 +110,8 @@ const Testimonials = () => {
         <Typography
           sx={{
             color: "#555555",
-
-            fontSize: "24px",
+            textAlign: { md: "left", xs: "center" },
+            fontSize: { md: "24px", xs: "18px" },
             fontWeight: 500,
           }}
         >

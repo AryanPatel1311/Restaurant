@@ -10,15 +10,17 @@ const PopularCatagories = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 10,
-        py: "75px",
+        gap: { md: 10, xs: 5 },
+        py: { md: "75px", xs: "40px" },
+        px: 4,
       }}
     >
+      {/* Header Section */}
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: 3,
+          gap: { md: 3, xs: 1 },
           alignItems: "center",
         }}
       >
@@ -26,7 +28,7 @@ const PopularCatagories = () => {
           align="center"
           sx={{
             color: "#FF6868",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: 700,
             letterSpacing: 2.5,
             textTransform: "uppercase",
@@ -36,12 +38,26 @@ const PopularCatagories = () => {
         </Typography>
         <Typography
           align="center"
-          sx={{ color: "#000000", fontSize: "50px", fontWeight: 800 }}
+          sx={{
+            color: "#000000",
+            fontSize: { md: "50px", xs: "25px" },
+            fontWeight: 800,
+          }}
         >
           Popular Catagories
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
+
+      {/* Grid Layout for Cards */}
+      <Box
+        sx={{
+          display: "grid",
+          gap: 3,
+          width: "100%",
+          justifyContent: "center",
+          gridTemplateColumns: { xs: "1fr", md: "1fr 1fr 1fr 1fr" }, // 1 column on mobile, 2 on laptop
+        }}
+      >
         <CatagoryCard
           img={"/pngwing 4.png"}
           name={"Main Dish"}

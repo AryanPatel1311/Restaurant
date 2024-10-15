@@ -7,32 +7,45 @@ const HeroSection = () => {
   return (
     <Box
       sx={{
-        py: "130px",
+        py: { md: "130px", xs: "40px" },
+        px: 2,
         display: "flex",
-        alignItems: "flex-start",
+        alignItems: { md: "flex-start", xs: "center" },
         width: "100%",
-        justifyContent: "space-between",
+        justifyContent: { md: "space-between", xs: "center" },
         position: "relative",
         overflow: "hidden",
+        flexDirection: { md: "row", xs: "column-reverse" },
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: 4,
-          alignItems: "flex-start",
-          width: { md: "40vw", xl: "30vw" },
+          gap: { md: 4, xs: 2 },
+          alignItems: { md: "flex-start", xs: "center" },
+          width: { md: "40vw", xl: "30vw", xs: "100%" },
+          mt: { xs: 2, md: 0 },
         }}
       >
         <Typography
-          sx={{ color: "#000000", fontSize: "48px", fontWeight: 800 }}
+          sx={{
+            color: "#000000",
+            fontSize: { md: "48px", xs: "30px" },
+            fontWeight: 800,
+            textAlign: { xs: "center", md: "left" },
+          }}
         >
           Dive into Delights Of Delectable{" "}
           <span style={{ color: "#39DB4A" }}>Food</span>
         </Typography>
         <Typography
-          sx={{ color: "#4A4A4A", fontSize: "24px", fontWeight: 500 }}
+          sx={{
+            color: "#4A4A4A",
+            fontSize: { md: "24px", xs: "18px" },
+            fontWeight: 500,
+            textAlign: { md: "left", xs: "center" },
+          }}
         >
           Where Each Plate Weaves a Story of Culinary Mastery and Passionate
           Craftsmanship
@@ -78,22 +91,23 @@ const HeroSection = () => {
       <Box
         sx={{
           backgroundColor: "#53EC62",
-          width: "522px",
-          height: "522px",
+          width: { md: "522px", xs: "300px" },
+          height: { md: "522px", xs: "295px" },
           borderRadius: 100,
           position: "relative",
           zIndex: -1,
+          mt: { md: 0, xs: "40px" },
         }}
       >
         <Box
           component={"img"}
           src="/hero.png"
           sx={{
-            width: "600px",
-            height: "640px",
+            width: { md: "600px", xs: "340px" },
+            height: { md: "640px", xs: "380px" },
             position: "absolute",
-            top: -120,
-            left: -65,
+            top: { md: -120, xs: -82 },
+            left: { md: -66, xs: -36 },
             zIndex: 1,
             objectFit: "contain",
           }}
@@ -104,15 +118,16 @@ const HeroSection = () => {
           sx={{
             position: "absolute",
             top: 50,
-            left: -100,
+            left: { md: -100, xs: 200 },
             height: "67px",
             width: "240px",
             objectFit: "cover",
+            display: { md: "block", xs: "none" },
           }}
         />
         <Box
           sx={{
-            display: "flex",
+            display: { md: "flex", xs: "none" },
             alignItems: "center",
             gap: 3,
             position: "absolute",
